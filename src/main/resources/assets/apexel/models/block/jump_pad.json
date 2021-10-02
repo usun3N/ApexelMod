@@ -1,0 +1,9 @@
+{
+  "parent": "apexel:custom/jumppad",
+  "textures": {
+    "all": "apexel:blocks/jumppaditem",
+    "particle": "apexel:blocks/jumppaditem",
+    "0": "apexel:blocks/jumppad1png",
+    "1": "apexel:blocks/jumppad2"
+  }
+}

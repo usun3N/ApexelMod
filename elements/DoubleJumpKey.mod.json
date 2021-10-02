@@ -1,0 +1,12 @@
+{
+  "_fv": 24,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Double Jump Key",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "DoubleJumpEvent"
+    }
+  }
+}

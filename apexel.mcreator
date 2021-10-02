@@ -1,0 +1,221 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "StimEffect",
+      "type": "potioneffect",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stim_effect",
+      "path": "~/Stim"
+    },
+    {
+      "name": "StimUseEvent",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stim_use_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Stim"
+    },
+    {
+      "name": "StimTickEvent",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stim_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Stim"
+    },
+    {
+      "name": "Stim",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stim",
+      "path": "~/Stim"
+    },
+    {
+      "name": "JumpPad",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jump_pad",
+      "path": "~/JumpPad"
+    },
+    {
+      "name": "DoubleJumpEffect",
+      "type": "potioneffect",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_effect",
+      "path": "~/JumpPad"
+    },
+    {
+      "name": "JumpPadEvent",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "jump_pad_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JumpPad"
+    },
+    {
+      "name": "DoubleJumpEvent",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/JumpPad"
+    },
+    {
+      "name": "DoubleJumpKey",
+      "type": "keybind",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "double_jump_key",
+      "path": "~/JumpPad"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "block.apexel.jump_pad": "Jump Pad",
+      "item.apexel.stim": "Stim",
+      "key.apexel.double_jump_key": "Double Jump Key",
+      "effect.stim_effect": "Stim",
+      "effect.double_jump_effect": "DoubleJump"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Stim",
+        "children": []
+      },
+      {
+        "name": "JumpPad",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "apexel",
+    "modName": "Apexel",
+    "version": "1.0.0",
+    "author": "den, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.apexel",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}
