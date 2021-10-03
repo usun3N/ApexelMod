@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "stim",
+    "texture": "blackmarkettest",
     "customModelName": "Normal",
-    "name": "Stim",
+    "name": "Black Market Item",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Apexel"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 2,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -29,8 +29,8 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "StimUseEvent"
+    "onRightClickedOnBlock": {
+      "name": "BlackMarketUseEvent"
     },
     "hasDispenseBehavior": false
   }

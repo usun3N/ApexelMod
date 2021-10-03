@@ -11,16 +11,18 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
+import net.minecraft.entity.ai.attributes.AttributeModifierManager;
 import net.minecraft.entity.LivingEntity;
 
-import net.mcreator.apexel.procedures.NoFallProcedure;
+import net.mcreator.apexel.procedures.VoidTickEventProcedure;
+import net.mcreator.apexel.procedures.VoidEndEventProcedure;
 
 import java.util.Map;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class DoubleJumpEffectPotionEffect {
-	@ObjectHolder("apexel:double_jump_effect")
+public class VoidEffectPotionEffect {
+	@ObjectHolder("apexel:void_effect")
 	public static final Effect potion = null;
 	@SubscribeEvent
 	public static void registerEffect(RegistryEvent.Register<Effect> event) {
@@ -29,14 +31,14 @@ public class DoubleJumpEffectPotionEffect {
 	public static class EffectCustom extends Effect {
 		private final ResourceLocation potionIcon;
 		public EffectCustom() {
-			super(EffectType.BENEFICIAL, -3355444);
-			setRegistryName("double_jump_effect");
-			potionIcon = new ResourceLocation("apexel:textures/doublejumpicon.png");
+			super(EffectType.BENEFICIAL, -16777114);
+			setRegistryName("void_effect");
+			potionIcon = new ResourceLocation("apexel:textures/into_the_void.png");
 		}
 
 		@Override
 		public String getName() {
-			return "effect.double_jump_effect";
+			return "effect.void_effect";
 		}
 
 		@Override
@@ -73,7 +75,25 @@ public class DoubleJumpEffectPotionEffect {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				NoFallProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				VoidTickEventProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void removeAttributesModifiersFromEntity(LivingEntity entity, AttributeModifierManager attributeMapIn, int amplifier) {
+			super.removeAttributesModifiersFromEntity(entity, attributeMapIn, amplifier);
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				VoidEndEventProcedure.executeProcedure($_dependencies);
 			}
 		}
 

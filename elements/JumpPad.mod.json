@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "BUILDING_BLOCKS"
+      "value": "CUSTOM:Apexel"
     },
     "destroyTool": "Not specified",
     "customDrop": {

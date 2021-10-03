@@ -1,0 +1,9 @@
+{
+  "parent": "apexel:custom/smokelauncher",
+  "textures": {
+    "0": "apexel:blocks/smokelauncher1",
+    "1": "apexel:blocks/smokelauncher2",
+    "2": "apexel:blocks/smokelauncher3",
+    "particle": "apexel:items/smokelauncheritem"
+  }
+}

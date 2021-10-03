@@ -1,7 +1,18 @@
 {
   "block.apexel.jump_pad": "Jump Pad",
   "item.apexel.stim": "Stim",
-  "key.apexel.double_jump_key": "Double Jump Key",
+  "effect.void_effect": "Void",
   "effect.stim_effect": "Stim",
-  "effect.double_jump_effect": "DoubleJump"
+  "item.apexel.void_stone": "Void Stone",
+  "item.apexel.black_market_spawn_egg": "Black Market Spawn Egg",
+  "item.apexel.black_market_item": "Black Market Item",
+  "entity.apexel.black_market": "Black Market",
+  "itemGroup.tabapexel": "Apexel",
+  "entity.apexel.smoke_entity": "Smoke Entity",
+  "item.apexel.smoke_launcher": "Smoke Launcher",
+  "item.apexel.apexel_logo": "Apexel Logo",
+  "item.apexel.smoke_entity_spawn_egg": "Smoke Entity Spawn Egg",
+  "key.apexel.double_jump_key": "Double Jump Key",
+  "effect.double_jump_effect": "DoubleJump",
+  "item.apexel.smoke": "Smoke"
 }

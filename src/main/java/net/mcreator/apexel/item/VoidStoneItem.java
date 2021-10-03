@@ -12,7 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apexel.procedures.StimUseEventProcedure;
+import net.mcreator.apexel.procedures.VoidStoneEventProcedure;
 import net.mcreator.apexel.itemgroup.ApexelItemGroup;
 import net.mcreator.apexel.ApexelModElements;
 
@@ -20,11 +20,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @ApexelModElements.ModElement.Tag
-public class StimItem extends ApexelModElements.ModElement {
-	@ObjectHolder("apexel:stim")
+public class VoidStoneItem extends ApexelModElements.ModElement {
+	@ObjectHolder("apexel:void_stone")
 	public static final Item block = null;
-	public StimItem(ApexelModElements instance) {
-		super(instance, 4);
+	public VoidStoneItem(ApexelModElements instance) {
+		super(instance, 13);
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class StimItem extends ApexelModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ApexelItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("stim");
+			setRegistryName("void_stone");
 		}
 
 		@Override
@@ -44,7 +44,7 @@ public class StimItem extends ApexelModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 2;
+			return 0;
 		}
 
 		@Override
@@ -63,7 +63,11 @@ public class StimItem extends ApexelModElements.ModElement {
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
 				$_dependencies.put("itemstack", itemstack);
-				StimUseEventProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				VoidStoneEventProcedure.executeProcedure($_dependencies);
 			}
 			return ar;
 		}

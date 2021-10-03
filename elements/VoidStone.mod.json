@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "stim",
+    "texture": "voidstone",
     "customModelName": "Normal",
-    "name": "Stim",
+    "name": "Void Stone",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Apexel"
     },
     "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 2,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "StimUseEvent"
+      "name": "VoidStoneEvent"
     },
     "hasDispenseBehavior": false
   }

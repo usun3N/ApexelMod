@@ -28,7 +28,7 @@ public class StimUseEventProcedure {
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHealth() : -1) > 4)) {
 			if (entity instanceof LivingEntity)
-				((LivingEntity) entity).addPotionEffect(new EffectInstance(StimEffectPotionEffect.potion, (int) 80, (int) 1, (false), (false)));
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(StimEffectPotionEffect.potion, (int) 80, (int) 1, (true), (true)));
 			if (entity instanceof LivingEntity)
 				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.SPEED, (int) 80, (int) 3, (false), (false)));
 			entity.attackEntityFrom(DamageSource.SWEET_BERRY_BUSH, (float) 4);

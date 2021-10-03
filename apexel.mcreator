@@ -174,6 +174,425 @@
       "ids": {},
       "registry_name": "double_jump_key",
       "path": "~/JumpPad"
+    },
+    {
+      "name": "VoidEffect",
+      "type": "potioneffect",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_effect",
+      "path": "~/Void"
+    },
+    {
+      "name": "VoidHUD",
+      "type": "overlay",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_hud",
+      "path": "~/Void"
+    },
+    {
+      "name": "VoidHUDEvent",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_hud_event",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Void"
+    },
+    {
+      "name": "VoidTickEvent",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Void"
+    },
+    {
+      "name": "VoidEndEvent",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_end_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Void"
+    },
+    {
+      "name": "VoidStoneEvent",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_stone_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Void"
+    },
+    {
+      "name": "VoidStone",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_stone",
+      "path": "~/Void"
+    },
+    {
+      "name": "NoFall",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "no_fall",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/JumpPad"
+    },
+    {
+      "name": "SmokeLauncher",
+      "type": "rangeditem",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_launcher",
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "ApexelLogo",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apexel_logo"
+    },
+    {
+      "name": "Apexel",
+      "type": "tab",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "apexel"
+    },
+    {
+      "name": "Smoke",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke",
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "SmokeEntity",
+      "type": "livingentity",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_entity",
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "SmokeHitEvent",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_hit_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "SmokeEntityEvent",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_entity_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "SmokeDelEvent",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_del_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "SmokeTickEvent",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SmokeLauncher"
+    },
+    {
+      "name": "BlackMarket",
+      "type": "livingentity",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_market",
+      "path": "~/BlackMarket"
+    },
+    {
+      "name": "BlackMarketUseEvent",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_market_use_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BlackMarket"
+    },
+    {
+      "name": "BlackMarketItem",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_market_item",
+      "path": "~/BlackMarket"
+    },
+    {
+      "name": "BlackMarketDelEvent",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_market_del_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/BlackMarket"
+    },
+    {
+      "name": "BlackMarketEvent",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "black_market_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/BlackMarket"
     }
   ],
   "variable_elements": [],
@@ -182,9 +601,20 @@
     "en_us": {
       "block.apexel.jump_pad": "Jump Pad",
       "item.apexel.stim": "Stim",
-      "key.apexel.double_jump_key": "Double Jump Key",
+      "effect.void_effect": "Void",
       "effect.stim_effect": "Stim",
-      "effect.double_jump_effect": "DoubleJump"
+      "item.apexel.void_stone": "Void Stone",
+      "item.apexel.black_market_spawn_egg": "Black Market Spawn Egg",
+      "item.apexel.black_market_item": "Black Market Item",
+      "entity.apexel.black_market": "Black Market",
+      "itemGroup.tabapexel": "Apexel",
+      "entity.apexel.smoke_entity": "Smoke Entity",
+      "item.apexel.smoke_launcher": "Smoke Launcher",
+      "item.apexel.apexel_logo": "Apexel Logo",
+      "item.apexel.smoke_entity_spawn_egg": "Smoke Entity Spawn Egg",
+      "key.apexel.double_jump_key": "Double Jump Key",
+      "effect.double_jump_effect": "DoubleJump",
+      "item.apexel.smoke": "Smoke"
     }
   },
   "foldersRoot": {
@@ -196,6 +626,18 @@
       },
       {
         "name": "JumpPad",
+        "children": []
+      },
+      {
+        "name": "Void",
+        "children": []
+      },
+      {
+        "name": "SmokeLauncher",
+        "children": []
+      },
+      {
+        "name": "BlackMarket",
         "children": []
       }
     ]

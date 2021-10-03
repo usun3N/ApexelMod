@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "smoketexture",
+        "1": "smoketexture2",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

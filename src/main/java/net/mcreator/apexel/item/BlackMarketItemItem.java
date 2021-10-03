@@ -4,15 +4,17 @@ package net.mcreator.apexel.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
-import net.minecraft.util.Hand;
-import net.minecraft.util.ActionResult;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.item.Rarity;
+import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.apexel.procedures.StimUseEventProcedure;
+import net.mcreator.apexel.procedures.BlackMarketUseEventProcedure;
 import net.mcreator.apexel.itemgroup.ApexelItemGroup;
 import net.mcreator.apexel.ApexelModElements;
 
@@ -20,11 +22,11 @@ import java.util.Map;
 import java.util.HashMap;
 
 @ApexelModElements.ModElement.Tag
-public class StimItem extends ApexelModElements.ModElement {
-	@ObjectHolder("apexel:stim")
+public class BlackMarketItemItem extends ApexelModElements.ModElement {
+	@ObjectHolder("apexel:black_market_item")
 	public static final Item block = null;
-	public StimItem(ApexelModElements instance) {
-		super(instance, 4);
+	public BlackMarketItemItem(ApexelModElements instance) {
+		super(instance, 24);
 	}
 
 	@Override
@@ -34,7 +36,7 @@ public class StimItem extends ApexelModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ApexelItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("stim");
+			setRegistryName("black_market_item");
 		}
 
 		@Override
@@ -44,7 +46,7 @@ public class StimItem extends ApexelModElements.ModElement {
 
 		@Override
 		public int getUseDuration(ItemStack itemstack) {
-			return 2;
+			return 0;
 		}
 
 		@Override
@@ -53,19 +55,27 @@ public class StimItem extends ApexelModElements.ModElement {
 		}
 
 		@Override
-		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
-			ActionResult<ItemStack> ar = super.onItemRightClick(world, entity, hand);
-			ItemStack itemstack = ar.getResult();
-			double x = entity.getPosX();
-			double y = entity.getPosY();
-			double z = entity.getPosZ();
+		public ActionResultType onItemUseFirst(ItemStack stack, ItemUseContext context) {
+			ActionResultType retval = super.onItemUseFirst(stack, context);
+			World world = context.getWorld();
+			BlockPos pos = context.getPos();
+			PlayerEntity entity = context.getPlayer();
+			Direction direction = context.getFace();
+			BlockState blockstate = world.getBlockState(pos);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			ItemStack itemstack = context.getItem();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				$_dependencies.put("itemstack", itemstack);
-				StimUseEventProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BlackMarketUseEventProcedure.executeProcedure($_dependencies);
 			}
-			return ar;
+			return retval;
 		}
 	}
 }

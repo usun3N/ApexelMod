@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "smokelauncher1",
+        "1": "smokelauncher2",
+        "2": "smokelauncher3"
+      },
+      "name": "default"
+    }
+  }
+}
