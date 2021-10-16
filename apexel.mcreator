@@ -593,27 +593,247 @@
         ]
       },
       "path": "~/BlackMarket"
+    },
+    {
+      "name": "FlagGranade",
+      "type": "rangeditem",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade",
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "FlagGranadeEntity",
+      "type": "livingentity",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade_entity",
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "FlagGranadeSpawnEvent",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade_spawn_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "FlagGranadeExplosion",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "FlagGranadeDelEvent",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade_del_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "FlagGranadeUseEvent",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade_use_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "FlagGranadeItem",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flag_granade_item",
+      "path": "~/FlagGranade"
+    },
+    {
+      "name": "ArcstarEntity",
+      "type": "livingentity",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcstar_entity",
+      "path": "~/ArcStar"
+    },
+    {
+      "name": "ArcstarEntityEvent",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arcstar_entity_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ArcStar"
+    },
+    {
+      "name": "ArcStar",
+      "type": "rangeditem",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arc_star",
+      "path": "~/ArcStar"
+    },
+    {
+      "name": "ArcStarUseEvent",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arc_star_use_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ArcStar"
+    },
+    {
+      "name": "ArcStarItem",
+      "type": "item",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arc_star_item",
+      "path": "~/ArcStar"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.apexel.jump_pad": "Jump Pad",
+      "entity.apexel.flag_granade_entity": "Flag Granade Entity",
+      "item.apexel.arc_star": "Arc Star",
       "item.apexel.stim": "Stim",
-      "effect.void_effect": "Void",
-      "effect.stim_effect": "Stim",
       "item.apexel.void_stone": "Void Stone",
       "item.apexel.black_market_spawn_egg": "Black Market Spawn Egg",
       "item.apexel.black_market_item": "Black Market Item",
-      "entity.apexel.black_market": "Black Market",
+      "item.apexel.flag_granade": "Flag Granade",
       "itemGroup.tabapexel": "Apexel",
+      "item.apexel.flag_granade_entity_spawn_egg": "Flag Granade Entity Spawn Egg",
       "entity.apexel.smoke_entity": "Smoke Entity",
-      "item.apexel.smoke_launcher": "Smoke Launcher",
       "item.apexel.apexel_logo": "Apexel Logo",
       "item.apexel.smoke_entity_spawn_egg": "Smoke Entity Spawn Egg",
-      "key.apexel.double_jump_key": "Double Jump Key",
+      "item.apexel.flag_granade_item": "Flag Granade",
       "effect.double_jump_effect": "DoubleJump",
+      "block.apexel.jump_pad": "Jump Pad",
+      "effect.void_effect": "Void",
+      "item.apexel.arc_star_item": "Arc Star",
+      "effect.stim_effect": "Stim",
+      "entity.apexel.black_market": "Black Market",
+      "entity.apexel.arcstar_entity": "Arcstar Entity",
+      "item.apexel.smoke_launcher": "Smoke Launcher",
+      "item.apexel.arcstar_entity_spawn_egg": "Arcstar Entity Spawn Egg",
+      "key.apexel.double_jump_key": "Double Jump Key",
       "item.apexel.smoke": "Smoke"
     }
   },
@@ -638,6 +858,14 @@
       },
       {
         "name": "BlackMarket",
+        "children": []
+      },
+      {
+        "name": "FlagGranade",
+        "children": []
+      },
+      {
+        "name": "ArcStar",
         "children": []
       }
     ]

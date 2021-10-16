@@ -1,0 +1,7 @@
+{
+  "parent": "apexel:custom/flaggranade",
+  "textures": {
+    "1": "apexel:blocks/flaggranademodel",
+    "particle": "apexel:items/flaggranade"
+  }
+}

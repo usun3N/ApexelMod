@@ -1,0 +1,93 @@
+newmtl Cozy Vibe_b6581526-5322-49dc-bfc7-2642b3df4afd
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Cozy Vibe 1_d2e861bd-0b68-4ee5-a439-627d5a7fc31f
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Andorra_a598c173-d533-4253-a605-5ee01bf08588
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Paris_3ef13e43-0e81-457d-be79-4e27f1256bd5
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Paris 2_f9c4fa12-233e-4c98-946b-377265b6cc5c
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Paris 6_dd7f6706-0655-4315-8d39-088ea5f6ca78
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Paris 5_7ae96a33-7074-4cbf-8314-56df66a7b609
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Paris 3_b6d1b57e-cf54-4e91-b151-f630b6ed9c93
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Paris 1_b147a4cd-2ef8-480e-9488-9fff1c62a305
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Quiet Passion_c680f9fa-a252-479c-9516-8ee055ba3e1c
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+map_Kd apexel:blocks/
+Ns 100.0
+d 1.0
+newmtl Historic Shade_2202bef2-98e3-4ff7-bb20-9ed842135ee4
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+map_Kd apexel:blocks/
+Ns 100.0
+d 1.0
+newmtl Historic Shade 1_885415c2-ef8e-4972-bc38-f5af756ceeea
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+map_Kd apexel:blocks/
+Ns 100.0
+d 1.0
+newmtl Phantom_c90d2d88-c6c7-4715-a6c0-0e024336335b
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Lazy Sunday_75d45088-e9cf-47f7-a43e-df012d517055
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
+newmtl Caribbean Balm_e4e6b1f8-460b-47ba-9e08-24646d418e07
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8
+Ks 0.0 0.0 0.0
+Ns 100.0
+d 1.0
