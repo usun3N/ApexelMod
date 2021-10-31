@@ -33,7 +33,7 @@ public class VoidStoneItem extends ApexelModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ApexelItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(ApexelItemGroup.tab).maxDamage(30).rarity(Rarity.COMMON));
 			setRegistryName("void_stone");
 		}
 

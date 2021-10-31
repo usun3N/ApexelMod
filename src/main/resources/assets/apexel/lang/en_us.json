@@ -1,8 +1,9 @@
 {
-  "entity.apexel.flag_granade_entity": "Flag Granade Entity",
   "item.apexel.arc_star": "Arc Star",
+  "entity.apexel.flag_granade_entity": "Flag Granade Entity",
   "item.apexel.stim": "Stim",
-  "item.apexel.void_stone": "Void Stone",
+  "item.apexel.gravity_lift": "Gravity Lift",
+  "item.apexel.void_stone": "VoidJumpDevice",
   "item.apexel.black_market_spawn_egg": "Black Market Spawn Egg",
   "item.apexel.black_market_item": "Black Market Item",
   "item.apexel.flag_granade": "Flag Granade",
@@ -22,5 +23,7 @@
   "item.apexel.smoke_launcher": "Smoke Launcher",
   "item.apexel.arcstar_entity_spawn_egg": "Arcstar Entity Spawn Egg",
   "key.apexel.double_jump_key": "Double Jump Key",
+  "item.apexel.gravity_lift_entity_spawn_egg": "Gravity Lift Entity Spawn Egg",
+  "entity.apexel.gravity_lift_entity": "Gravity Lift Entity",
   "item.apexel.smoke": "Smoke"
 }

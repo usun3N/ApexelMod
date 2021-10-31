@@ -3,19 +3,19 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "arcstar",
+    "texture": "gravitylift",
     "customModelName": "Normal",
-    "name": "Arc Star",
+    "name": "Gravity Lift",
     "specialInfo": [],
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:Apexel"
     },
     "stackSize": 16,
     "ammoItem": {
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 100,
+    "usageCount": 0,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },
@@ -23,24 +23,15 @@
     "animation": "bow",
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 0.5,
-    "bulletDamage": 5.0,
+    "bulletPower": 0.3,
+    "bulletDamage": 0.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
-    "bulletModel": "Modelcustom_model",
-    "customBulletModelTexture": "arcstar.png",
-    "onBulletHitsBlock": {
-      "name": "ArcstarEntityEvent"
-    },
-    "onBulletHitsEntity": {
-      "name": "ArcstarEntityEvent"
-    },
-    "onBulletFlyingTick": {
-      "name": "ArcStarTickEvent"
-    }
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
   }
 }

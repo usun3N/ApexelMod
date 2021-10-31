@@ -28,26 +28,24 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
-import net.mcreator.apexel.procedures.ArcstarEntityEventProcedure;
-import net.mcreator.apexel.procedures.ArcStarTickEventProcedure;
-import net.mcreator.apexel.entity.renderer.ArcStarRenderer;
+import net.mcreator.apexel.itemgroup.ApexelItemGroup;
+import net.mcreator.apexel.entity.renderer.GravityLiftRenderer;
 import net.mcreator.apexel.ApexelModElements;
 
 import java.util.Random;
-import java.util.Map;
-import java.util.HashMap;
 
 @ApexelModElements.ModElement.Tag
-public class ArcStarItem extends ApexelModElements.ModElement {
-	@ObjectHolder("apexel:arc_star")
+public class GravityLiftItem extends ApexelModElements.ModElement {
+	@ObjectHolder("apexel:gravity_lift")
 	public static final Item block = null;
 	public static final EntityType arrow = (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-			.size(0.5f, 0.5f)).build("entitybulletarc_star").setRegistryName("entitybulletarc_star");
-	public ArcStarItem(ApexelModElements instance) {
-		super(instance, 35);
-		FMLJavaModLoadingContext.get().getModEventBus().register(new ArcStarRenderer.ModelRegisterHandler());
+			.size(0.5f, 0.5f)).build("entitybulletgravity_lift").setRegistryName("entitybulletgravity_lift");
+	public GravityLiftItem(ApexelModElements instance) {
+		super(instance, 43);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new GravityLiftRenderer.ModelRegisterHandler());
 	}
 
 	@Override
@@ -57,8 +55,8 @@ public class ArcStarItem extends ApexelModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(null).maxDamage(100));
-			setRegistryName("arc_star");
+			super(new Item.Properties().group(ApexelItemGroup.tab).maxStackSize(16));
+			setRegistryName("gravity_lift");
 		}
 
 		@Override
@@ -85,7 +83,7 @@ public class ArcStarItem extends ApexelModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.5f, 5, 0);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.3f, 0, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 				}
@@ -119,7 +117,7 @@ public class ArcStarItem extends ApexelModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return null;
+			return new ItemStack(Blocks.AIR);
 		}
 
 		@Override
@@ -131,20 +129,6 @@ public class ArcStarItem extends ApexelModElements.ModElement {
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
-			Entity sourceentity = this.func_234616_v_();
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			World world = this.world;
-			Entity imediatesourceentity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ArcstarEntityEventProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override
@@ -156,23 +140,7 @@ public class ArcStarItem extends ApexelModElements.ModElement {
 			World world = this.world;
 			Entity entity = this.func_234616_v_();
 			Entity imediatesourceentity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ArcStarTickEventProcedure.executeProcedure($_dependencies);
-			}
 			if (this.inGround) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					ArcstarEntityEventProcedure.executeProcedure($_dependencies);
-				}
 				this.remove();
 			}
 		}
@@ -199,9 +167,9 @@ public class ArcStarItem extends ApexelModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0.5f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 0.3f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(5);
+		entityarrow.setDamage(0);
 		entityarrow.setKnockbackStrength(0);
 		entityarrow.setIsCritical(false);
 		entity.world.addEntity(entityarrow);

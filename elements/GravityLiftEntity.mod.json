@@ -2,14 +2,14 @@
   "_fv": 24,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Arcstar Entity",
+    "mobName": "Gravity Lift Entity",
     "mobLabel": "",
-    "mobModelName": "Modelcustom_model",
-    "mobModelTexture": "arcstar.png",
+    "mobModelName": "ModelGravityLift",
+    "mobModelTexture": "gravitylifttexture.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.1,
-    "modelHeight": 0.1,
-    "modelShadowSize": 0.1,
+    "modelWidth": 0.3,
+    "modelHeight": 0.3,
+    "modelShadowSize": 0.3,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
@@ -98,16 +98,7 @@
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
-    "whenMobDies": {
-      "name": "ArcStarExplosiveEvent"
-    },
-    "onMobTickUpdate": {
-      "name": "ArcStarTickEvent"
-    },
-    "onInitialSpawn": {
-      "name": "ArcStarDelEvent"
-    },
-    "hasAI": true,
+    "hasAI": false,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
     "breedable": false,
@@ -119,7 +110,7 @@
     },
     "rangedItemType": "Default item",
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": false,
+    "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
